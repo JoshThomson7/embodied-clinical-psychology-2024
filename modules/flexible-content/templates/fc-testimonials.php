@@ -73,7 +73,7 @@ while($testimonials->have_posts()) : $testimonials->the_post();
             <?php endif; ?>
 
             <div class="testim__content">
-                <p><?php if(get_sub_field('testimonials_display_format') === 'grid') { echo trunc(get_field('testim_quote'), 25); } else { the_field('testim_quote'); } ?></p>
+                <p><?php if(get_sub_field('testimonials_display_format') === 'grid') { echo trunc(get_field('testim_quote'), 125); } else { the_field('testim_quote'); } ?></p>
                 <h5><?php the_field('testim_name'); ?></h5>
             </div><!-- testim__content -->
         </div>

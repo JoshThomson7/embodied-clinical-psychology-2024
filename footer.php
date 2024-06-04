@@ -19,8 +19,8 @@
                     <h5>Contact Us <span class="ion-ios-plus-empty"></span></h5>
 
                     <ul>
-                        <li><i class="fa fa-phone"></i><a href="tel:01707642255">01707 642255</a></li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:info@youandeyeopticians.co.uk">info@youandeyeopticians.co.uk</a></li>
+                        <li><i class="fa fa-phone"></i><a href="tel:07543794335">07543794335</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:hello@embodiedclinicalpsychology.com">hello@embodiedclinicalpsychology.com</a></li>
                     </ul>
                 </article>
 
@@ -45,10 +45,11 @@
                     <h5>Find Us</h5>
 
                     <div class="contact">
-                        <a href="https://www.google.com/maps/place/You+and+Eye+Opticians/@51.6980069,-0.2001388,15z/data=!4m5!3m4!1s0x48763d4c92d650b5:0xd67800570fb9d078!8m2!3d51.6980119!4d-0.1913963" target="_blank">106 Darkes Lane,<br>
-                        Potters Bar,<br>
-                        Herts,<br>
-                        EN6 1AE</a>
+                        <a target="_blank" href="https://www.google.com/maps/place/The+Birdhouse+Therapy+Centre/@50.1532619,-5.0797484,15z/data=!4m6!3m5!1s0x486b3bea64cf14bf:0xca7d05b546b88857!8m2!3d50.1532586!4d-5.0671581!16s%2Fg%2F11s9vm0yyf?entry=ttu">
+                            The Bird House Therapy Centre,<br>
+                             12 Arwenack Street,<br>
+                             Falmouth, TR11 3JD
+                        </a>
                     </div>
                 </article>
 
@@ -58,8 +59,6 @@
 
         <div class="subfooter">
             <div class="subfooter__credits">
-                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
-                <p>&copy;<?php bloginfo('name') ?> <?php echo date("Y"); ?></p>
                 <p class="credit"><a href="https://thomson-website-solutions.com/" target="_blank">Website by Thomson Website Solutions</a></p>
             </div><!-- subfooter__credits -->
         </div><!-- subfooter -->

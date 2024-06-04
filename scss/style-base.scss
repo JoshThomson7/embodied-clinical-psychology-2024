@@ -35,6 +35,7 @@
 @import '../modules/advanced-video-banners/scss/avb';
 @import '../modules/flexible-content/scss/flexible-content';
 @import '../modules/advanced-slide-menu/scss/asm';
+@import '../modules/gravity-forms/scss/gf';
 
 /* -------------------------------------------
    ________      __          __
@@ -47,30 +48,6 @@
 
 body { font-family:$primaryFont; font-size:$baseFontSize; font-weight: 500; color:$text; overflow-x: hidden;
     &.no__scroll { overflow:hidden;}
-}
-
-.floating-social-media{
-    position: fixed; top: 15%; right: 0; z-index: 9999; display: flex; flex-direction: column; background: $primary; padding: 8px 3px 8px 5px; border-radius: 5px 0 0 5px;
-
-    @include breakpoint(teenbear){display: none;}
-
-    a{
-        i{
-            font-size: 20px; border-radius: 50%; border: 2px solid $secondary; background: $secondary; height: 40px; width: 40px; display: flex; align-items: center; justify-content: center; margin: 3px 0; color: $primary; transition: .5s ease all;
-            &:hover{
-                color: white; background: $primary;
-            }
-        }
-    }
-
-}
-
-.floating-reviews{
-    position: fixed; top: 50%; right: 0; z-index: 9999; display: flex; flex-direction: column; background: $lightgrey; padding: 10px 20px;
-
-    img{
-        max-width: 100px;
-    }
 }
 
 #page { 
@@ -177,8 +154,6 @@ a {
     p { color:$text;}
 }
 
-img { max-width: 100%; width: auto; height: auto; vertical-align: middle; border: 0; -ms-interpolation-mode: bicubic;}
-
 /**
 * Loaders
 */
@@ -196,8 +171,8 @@ img { max-width: 100%; width: auto; height: auto; vertical-align: middle; border
 /**
 * Buttons
 */
-a.button, button.button, button, input[type=submit], input[type=button] { display: flex; background: $secondary; align-self: flex-start; transition: all .4s ease; padding: 18px 40px 18px; cursor: pointer; border: none;
-    span { font-size: 16px; text-align: center; color: $white; line-height: 16px; font-family: $primaryFont;
+a.button, button.button, button, input[type=submit], input[type=button] { display: flex; background: $secondary; align-self: center; transition: all .4s ease; padding: 18px 40px 18px; cursor: pointer; border: none;
+    span { font-size: 18px; text-align: center; color: $white; line-height: 16px; font-family: $primaryFont;
     }
 
     &.primary{ background: $primary;  color: $white;
@@ -305,7 +280,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
     .header__main { position: relative; background: $white; border-bottom: 2px solid $secondary;
         @include breakpoint(papabear) { padding: 5px 0;}
 
-        .max__width { display: flex; justify-content: space-between; align-items: center;}
+        .max__width { display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
 
         .oc__nav__trigger,
         .burger__menu {
@@ -327,6 +302,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
             display: flex;
 
             .logo {
+                margin: 20px 0;
     
                 a { display:block;
                     img { width: 278px; align-self:center; margin: 0 auto;
@@ -336,8 +312,8 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
             }
         }
 
-        .header__cta{ display: flex; align-items: flex-end; flex-direction: column;
-            @include breakpoint(papabear) { flex-direction: row; align-items: center;}
+        .header__cta{ 
+            width: 100%;
 
             .contact{
                 display: flex;
@@ -362,10 +338,10 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
             }
 
             .header__menu{
-                display: flex; align-items: center; margin-top: 30px;
+                display: flex; align-items: center; width: 100%;
                 @include breakpoint(papabear) { display: none;}
            
-                ul { display: flex; align-items: center;
+                ul { display: flex; align-items: center; width: 100%; justify-content: space-between;
                     @include breakpoint(papabear) { margin-left: 0;}
     
                     li  { display: flex; align-items: center;
@@ -414,7 +390,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
                             }
                         }
     
-                        a { font-size: 15px; color: $text; display: flex; align-items: center; text-transform: uppercase; text-align: center; padding: 15px;
+                        a { font-size: 16px; color: $text; display: flex; align-items: center; text-align: center; padding: 15px;
 
                             &:hover{
                                 color: $secondary;
@@ -506,62 +482,6 @@ section {
    
 }
 
-// HOME BACKGROUND
-.home{
-    .flexible__content{
-        .fc_circle_masonry{
-            background-image: url('img/left-elipse.png'); background-position: top left; background-repeat: no-repeat; background-size: contain;
-        }
-    }
-}
-
-.home{
-    .flexible__content{
-        .fc_featured_testimonials{
-            background-image: url('img/right-elipse.png'); background-position: top right; background-repeat: no-repeat; background-size: contain;
-        }
-    }
-}
-
-// INFO WINDOW || ABOUT OUR AREA
-.wpgmza-infowindow{
-    p{
-        line-height: 18px!important;
-    }
-}
-
-.footer-blog-posts{
-    background: $lightgrey; padding: 40px 0;
-
-    .max__width{
-        .blog-posts-loop{
-            display: flex; justify-content: space-between;
-
-            .footer_blog_box{
-                width: 23%;
-
-                .image{
-                    height: 150px; background-size: cover; background-repeat: no-repeat;
-                }
-
-                .content{
-                    padding: 20px 10px; background: $white; border: 1px solid #efefef;
-
-                    .title{font-family: $boldFont; color: $primary;}
-                    .excerpt{color: $text; margin-top: 10px;}
-
-                    .blog_button{
-                        margin-top: 20px;
-
-                        a{color: $secondary; text-transform: uppercase; margin-top: 20px; font-family: $boldFont;}
-                        i{color: $secondary; margin-left: 10px;}
-                    }
-                }
-            }
-        }
-    }
-}
-
 /* Footer */
 footer { padding: 0; position: relative;
 
@@ -574,7 +494,7 @@ footer { padding: 0; position: relative;
             @include breakpoint(teenbear) { padding: 20px;}
 
             article {
-                width: 25%;
+                width: 34%;
                 
                 @include breakpoint(papabear) { width:100%; border-bottom: 1px $border solid;}
 
@@ -582,7 +502,7 @@ footer { padding: 0; position: relative;
                     margin-bottom: 30px; border-bottom: none;
                 }
 
-                h5 { font-size: 20px; font-weight: 600; color: $white; padding-bottom:20px;
+                h5 { font-size: 20px; color: $white; padding-bottom:20px;
                     @include breakpoint(papabear) { padding:20px 0; cursor:pointer;}
 
                     span { display:none; float:right; font-size:30px; position:relative; top:-6px;
@@ -859,132 +779,21 @@ footer { padding: 0; position: relative;
     }
 }
 
-// LANDING FORM
-#landingForm .gform_wrapper form .gform_body ul.gform_fields li.gfield .gfield_label{
-    color: white!important;
-}
-
-// XEYEX BOOKING
-#x3edabac23446401{
-    div{
-        display: flex; justify-content: center;
-        @include breakpoint(teenbear){
-            flex-direction: column; align-items: center;
-        }
-
-        button{
-            margin-right: 10px; font-family: $primaryFont; color: white;
-            @include breakpoint(teenbear){ margin-bottom: 10px;}
-
-        }
-
-        table{
-            margin: 0 20px;
-        }
+// 
+// 
+// CUSTOM for HEL B
+.wpforms-field-container{
+    label{
+        font-weight: unset!important;
     }
 
-    .xeyexAppTimes{
-        flex-direction: column; align-items: center;
-
-        div{
-            display: flex; flex-direction: row; align-items: center;
-            @include breakpoint(teenbear){
-                flex-direction: column;
-            }
-        }
-
-        button{
-            margin: 8px 10px;
-        }
-    }
-
-    form{
-        #pxDetails{
-            flex-direction: column;
-
-            .xeyexSubHeader{
-                padding-bottom: 10px; color: $secondary; margin-top: 20px; font-size: 20px;
-            }
-
-            .xeyexFieldMaster{
-                padding-bottom: 10px;
-
-                label{
-                    padding-right: 10px;
-                }
-
-                #xeyexPMS_dob{
-                    select{
-                        margin-right: 5px;
-                    }
-                }
-            }
-
-            input[type=submit]{
-                color: white; align-self: center!important; margin-top: 20px;
-            }
-        }
-    }
-
-    .s7css{
-        flex-direction: column; margin-bottom: 30px;
-
-        .s7cssxeyexCFMTitle, .s7cssxeyexCFMTitle{
-           color: $secondary; font-size: 18px; margin-bottom: 10px;
-        }
-    }
-
-    #s7AppointmentType, #Time, #s7YourDetails{ 
-        width: 25%;
-    }
-
-    #s7YourDetails p{
-        margin: 0; line-height: 20px;
-    }
-
-    input[type=button]{
-        color: white; align-self: center!important; margin: 20px auto 0;
+    input, textarea{
+        border: none!important; border-bottom: 1px solid black!important;
     }
 }
 
-// Modules
-@import '../modules/gravity-forms/scss/gf';
-
-.page-id-399{
-    .banner{
-        @include breakpoint(sisterbear){
-            background-image: none!important;
-        }
-    }
-}
-
-.pay-template{
-    h1 { line-height: 38px; font-size: 32px; color: $primary;}
-
-    form{
-        margin-top: 20px;
-
-        input[type="text"]{
-            appearance: none; -webkit-appearance: none; border-radius: 3px; padding: 15px; background: #f1f5f7; color: #6b8aa2; border: none; border-bottom: 1px transparent solid; line-height: normal; display: block; width: 50%; transition: all 0.3s ease-in-out; box-sizing: border-box; font-size: 16px; height: auto !important;
-        }
-
-        input[type="submit"]{
-            margin-top: 10px; font-family: "Mont", sans-serif; padding: 14px 60px 9px; font-size: 20px; font-size: 1.25rem; border-radius: 3px; background: #022e4f; font-weight: 700; color: #fff; display: inline-block; border: 0; height: auto !important; transition: all 0.3s ease-in-out;
-        }
-    }
-}
-
-// CUSTOM FOR YOU AND EYE
-
-// ABOUT PAGE
-.page-id-3627850{
-    .feature__image{
-        width: 25%!important;
-        @include breakpoint(teenbear){width: 100%!important;}
-    }
-
-    .feature__text{
-        width: 75%!important;
-        @include breakpoint(teenbear){width: 100%!important; text-align: center;}
+.wpforms-submit-container{
+    button{
+        line-height: 40px!important; background: $primary!important;
     }
 }
