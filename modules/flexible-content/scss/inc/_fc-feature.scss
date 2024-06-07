@@ -50,7 +50,7 @@ Feature
             }
         }
 
-        .feature__text { padding-left: 50px; padding-right: 25px;
+        .feature__text { padding-left: 40px; padding-right: 40px;
             @include breakpoint(papabear) { width:100%; padding-left: 0;}
 
             h3 { font-size: 30px; line-height: 36px; font-family: $boldFont;
@@ -74,7 +74,7 @@ Feature
 
             }
 
-            .feature__text { padding-right: 25px; padding-left: 50px;
+            .feature__text { padding-right: 40px; padding-left: 40px;
                 // /@include breakpoint(grandmabear) { border-right: 20px solid transparent;}
             }
 

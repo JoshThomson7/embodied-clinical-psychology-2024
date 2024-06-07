@@ -171,7 +171,7 @@ a {
 /**
 * Buttons
 */
-a.button, button.button, button, input[type=submit], input[type=button] { display: flex; background: $secondary; align-self: center; transition: all .4s ease; padding: 18px 40px 18px; cursor: pointer; border: none;
+a.button, button.button, button, input[type=submit], input[type=button] { display: flex; background: $primary; align-self: center; transition: all .4s ease; padding: 18px 40px 18px; cursor: pointer; border: none;
     span { font-size: 18px; text-align: center; color: $white; line-height: 16px; font-family: $primaryFont;
     }
 
@@ -198,7 +198,7 @@ a.button, button.button, button, input[type=submit], input[type=button] { displa
 
     @include breakpoint(mamabear) { align-self: center;}
 
-    &:hover { transition: all .4s ease; background: $primary; box-shadow: 0 3px 30px rgba(black, 0.2); transform: scale(1.03); color: $white;
+    &:hover { transition: all .4s ease; background: $tertiary; box-shadow: 0 3px 30px rgba(black, 0.2); transform: scale(1.03); color: $white;
         span{
             color: $white;
         }
@@ -280,7 +280,7 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
     .header__main { position: relative; background: $white; border-bottom: 2px solid $secondary;
         @include breakpoint(papabear) { padding: 5px 0;}
 
-        .max__width { display: flex; justify-content: space-between; align-items: center; flex-direction: column;}
+        .max__width { display: flex; justify-content: space-between; align-items: center;}
 
         .oc__nav__trigger,
         .burger__menu {
@@ -299,52 +299,34 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
         }
 
         .header_logo_menu{
-            display: flex;
+            display: flex; margin-right: 60px;
 
             .logo {
                 margin: 20px 0;
     
                 a { display:block;
-                    img { width: 278px; align-self:center; margin: 0 auto;
-                        @include breakpoint(brotherbear) { width: 139px;}
+                    img { width: 80px; align-self:center; margin: 0 auto;
+                        @include breakpoint(brotherbear) { width: 80px;}
                     }
                 }
             }
         }
 
         .header__cta{ 
-            width: 100%;
-
-            .contact{
-                display: flex;
-                @include breakpoint(papabear) { margin-right: 30px; margin-bottom: 0;}
-                @include breakpoint(teenbear) {display: none;}
-    
-                li{
-                    padding-left: 20px; display: flex; align-items: center;
-    
-                    i{color: $secondary; margin-right: 7px; font-size: 22px;}
-    
-                    a{ color: $secondary; font-family: $primaryFont;
-                        &:hover{
-                            color: $primary;
-    
-                            i{
-                                color: $primary;
-                            }
-                        }
-                    }
-                }
-            }
+            width: 100%; justify-content: flex-end; display: flex;
 
             .header__menu{
-                display: flex; align-items: center; width: 100%;
+                display: flex; align-items: center; width: 80%;
                 @include breakpoint(papabear) { display: none;}
            
                 ul { display: flex; align-items: center; width: 100%; justify-content: space-between;
                     @include breakpoint(papabear) { margin-left: 0;}
     
                     li  { display: flex; align-items: center;
+
+                        &.current-menu-item{
+                            border-bottom: 2px solid $primary;
+                        }
 
                         &.button{
                             background: $secondary; color: $white; padding: 8px 15px; margin-left: 10px;
@@ -390,11 +372,11 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
                             }
                         }
     
-                        a { font-size: 16px; color: $text; display: flex; align-items: center; text-align: center; padding: 15px;
+                        a { font-size: 18px; color: $tertiary; display: flex; align-items: center; text-align: center; padding: 15px;
 
-                            &:hover{
-                                color: $secondary;
-                            }
+                            // &:hover{
+                            //     color: $secondary;
+                            // }
 
                             &.button{ min-height: 34px; font-weight: bold;
                                 @include breakpoint(papabear) { display: none;}
