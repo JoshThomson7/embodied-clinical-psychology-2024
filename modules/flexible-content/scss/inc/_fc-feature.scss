@@ -53,8 +53,10 @@ Feature
         .feature__text { padding-left: 40px; padding-right: 40px;
             @include breakpoint(papabear) { width:100%; padding-left: 0;}
 
-            h3 { font-size: 30px; line-height: 36px; font-family: $boldFont;
+            h3 { font-size: 30px; line-height: 36px; font-family: $boldFont; display: flex; flex-direction: column;
                 @include breakpoint(teenbear) { font-size: 22px; line-height: 30px;}
+
+                span{font-size: 22px; color: $primary;}
             }
 
             p { font-size: 16px; line-height: 29px; margin-bottom: 20px;

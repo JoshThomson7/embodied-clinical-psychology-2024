@@ -44,7 +44,7 @@ $full_width = $styles['fc_full_width'] == true ? true : false;
             <a href="<?php the_sub_field('cta_button_link'); ?>" class="button <?php the_sub_field('cta_button_colour'); ?>" target="<?php echo $new_tab; ?>"><?php the_sub_field('cta_button_label'); ?></a>
         <?php endif; ?>
 
-        <div class="cta__overlay" style="background:rgba(0, 0, 0, <?php the_sub_field('cta_overlay_opacity'); ?>)"></div>
+        <div class="cta__overlay" style="background:rgba(21, 51, 84, <?php the_sub_field('cta_overlay_opacity'); ?>)"></div>
         <div class="cta__image<?php echo $parallax; ?>"<?php echo $bk_img; ?>></div>
         <?php if($full_width): ?></div><?php endif; ?>
     </div><!-- cta__wrapper -->

@@ -25221,12 +25221,18 @@ Flexible Content
   font-size: 30px;
   line-height: 36px;
   font-family: "Museo 700";
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 625px) {
   .flexible__content .fc_feature .fc_feature_wrapper .feature__text h3 {
     font-size: 22px;
     line-height: 30px;
   }
+}
+.flexible__content .fc_feature .fc_feature_wrapper .feature__text h3 span {
+  font-size: 22px;
+  color: #599bbc;
 }
 .flexible__content .fc_feature .fc_feature_wrapper .feature__text p {
   font-size: 16px;
@@ -25480,7 +25486,7 @@ Flexible Content
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  color: #599bbc;
+  color: #153354;
   font-size: 21px;
   margin: 0;
   cursor: pointer;
@@ -25495,7 +25501,7 @@ Flexible Content
 .flexible__content .fc_accordion .accordion__wrap h3 i {
   display: block;
   margin-top: 7px;
-  color: #535353;
+  color: #153354;
   font-size: 24px;
   margin: 0 0 0 20px;
   transition: all 0.2s ease;
@@ -25524,7 +25530,7 @@ Flexible Content
 }
 .flexible__content .fc_accordion .accordion__wrap.active h3 {
   font-size: 31px;
-  color: #599bbc;
+  color: #153354;
   font-weight: 700;
   transition: all 0.2s ease;
 }
@@ -25538,7 +25544,7 @@ Flexible Content
   width: 100%;
   max-width: 100px;
   height: 4px;
-  background: #535353;
+  background: #599bbc;
   margin: 0 0 20px;
 }
 .flexible__content .fc_accordion .accordion__wrap.active .accordion__bg {
@@ -26856,6 +26862,9 @@ Flexible Content
     flex-direction: column-reverse;
   }
 }
+.flexible__content .fc_testimonials .testimonials__wrapper article .test_content .testimonial__meta .stars {
+  display: none;
+}
 @media (max-width: 700px) {
   .flexible__content .fc_testimonials .testimonials__wrapper article .test_content .testimonial__meta .stars {
     margin-bottom: 10px;
@@ -26911,6 +26920,7 @@ Flexible Content
   font-size: 18px;
   color: #4c4b4f;
   padding-bottom: 0;
+  display: none;
 }
 .flexible__content .fc_testimonials .testimonials__wrapper article.left .testim__content {
   padding-left: 40px;
@@ -26962,6 +26972,7 @@ Flexible Content
   display: none;
 }
 .flexible__content .fc_testimonials .testimonials__wrapper.grid article .testimonial__meta .stars {
+  display: none;
   padding-top: 10px;
 }
 .flexible__content .fc_testimonials .testimonials__wrapper.grid article .testim__content {
