@@ -305,8 +305,8 @@ header.header { width:100%; transition: top .3s ease; position: sticky; z-index:
                 margin: 20px 0;
     
                 a { display:block;
-                    img { width: 80px; align-self:center; margin: 0 auto;
-                        @include breakpoint(brotherbear) { width: 80px;}
+                    img { width: 220px; align-self:center; margin: 0 auto;
+                        @include breakpoint(brotherbear) { width: 110px;}
                     }
                 }
             }

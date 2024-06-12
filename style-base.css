@@ -30202,13 +30202,13 @@ header.header .header__main .header_logo_menu .logo a {
   display: block;
 }
 header.header .header__main .header_logo_menu .logo a img {
-  width: 80px;
+  width: 220px;
   align-self: center;
   margin: 0 auto;
 }
 @media (max-width: 900px) {
   header.header .header__main .header_logo_menu .logo a img {
-    width: 80px;
+    width: 110px;
   }
 }
 header.header .header__main .header__cta {
