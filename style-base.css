@@ -30481,6 +30481,9 @@ footer .footer__menus .max__width article.find-us {
   margin-bottom: 30px;
   border-bottom: none;
 }
+footer .footer__menus .max__width article.find-us a {
+  font-size: 14px;
+}
 footer .footer__menus .max__width article h5 {
   font-size: 20px;
   color: #FFFFFE;
