@@ -23100,14 +23100,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .oc__nav .panel__left {
   width: 40%;
-  padding: 260px 60px 0 0;
+  padding: 160px 60px 0 0;
   transform: translateX(-1200px);
 }
 @media (max-width: 900px) {
   .oc__nav .panel__left {
     width: 100%;
     background: #fff;
-    padding: 110px 20px 40px;
+    padding: 110px 20px 20px;
   }
 }
 .oc__nav .panel__right {
@@ -23966,11 +23966,6 @@ section.banners .banner__caption {
   transform: translateZ(0) scale(1, 1);
   -webkit-transform: translateZ(0) scale(1, 1);
 }
-@media (max-width: 1024px) {
-  section.banners .banner__caption {
-    width: 60%;
-  }
-}
 @media (max-width: 700px) {
   section.banners .banner__caption {
     width: 100%;
@@ -23998,12 +23993,6 @@ section.banners .banner__caption h2 {
   padding: 0 0 40px;
   line-height: 64px;
   font-family: "Museo 700";
-}
-@media (max-width: 900px) {
-  section.banners .banner__caption h2 {
-    font-size: 32px;
-    line-height: 32px;
-  }
 }
 @media (max-width: 700px) {
   section.banners .banner__caption h2 {
@@ -25129,8 +25118,8 @@ Flexible Content
 }
 @media (max-width: 1024px) {
   .flexible__content .fc_feature {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 .flexible__content .fc_feature .fc_feature_wrapper {
@@ -25214,7 +25203,7 @@ Flexible Content
 @media (max-width: 1024px) {
   .flexible__content .fc_feature .fc_feature_wrapper .feature__text {
     width: 100%;
-    padding-left: 0;
+    padding: 40px 0;
   }
 }
 .flexible__content .fc_feature .fc_feature_wrapper .feature__text h3 {
@@ -25265,6 +25254,12 @@ Flexible Content
 .flexible__content .fc_feature .fc_feature_wrapper.right .feature__text {
   padding-right: 40px;
   padding-left: 40px;
+}
+@media (max-width: 1024px) {
+  .flexible__content .fc_feature .fc_feature_wrapper.right .feature__text {
+    width: 100%;
+    padding: 40px 0;
+  }
 }
 .flexible__content .fc_icon_grid .fc_icon_grid_wrapper {
   display: flex;
@@ -26620,7 +26615,6 @@ Flexible Content
 .flexible__content .fc_grid_boxes .grid__boxes__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 10px;
 }
 @media (max-width: 625px) {
   .flexible__content .fc_grid_boxes .grid__boxes__wrapper {
@@ -30455,7 +30449,7 @@ footer .footer__menus {
   background: #599bbc;
 }
 footer .footer__menus .max__width {
-  padding: 40px 60px 20px;
+  padding: 40px 60px 40px;
   display: flex;
 }
 @media (max-width: 1024px) {
@@ -30476,10 +30470,6 @@ footer .footer__menus .max__width article {
     width: 100%;
     border-bottom: 1px #e1e9ee solid;
   }
-}
-footer .footer__menus .max__width article.find-us {
-  margin-bottom: 30px;
-  border-bottom: none;
 }
 footer .footer__menus .max__width article.find-us a {
   font-size: 14px;

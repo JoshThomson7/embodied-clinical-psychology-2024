@@ -33,7 +33,6 @@ section.banners { position: relative; overflow: hidden;
         &__width { display: flex; height: 100%; overflow: hidden; flex-direction: column; justify-content: space-around;}
 
         &__caption { text-align: center; z-index: 4; display: flex; flex-direction: column; width: 100%; justify-content: center; box-sizing: border-box; visibility: visibile; opacity: 1; transition: all .4s ease; position: relative;
-            @include breakpoint(papabear) { width: 60%;}
             @include breakpoint(mamabear) { width: 100%; align-items: center;}
 
             &.off { visibility: hidden; opacity: 0; transition: all .4s ease;}
@@ -51,7 +50,6 @@ section.banners { position: relative; overflow: hidden;
             }
 
             h2 { font-size: 60px; color: #fff; font-weight: normal; padding: 0 0 40px; line-height: 64px; font-family: $boldFont;
-                @include breakpoint(brotherbear) { font-size: 32px; line-height: 32px;}
                 @include breakpoint(mamabear) {  font-size: 42px; line-height: 50px; text-align: center;}
             }
 

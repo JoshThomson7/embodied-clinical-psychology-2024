@@ -16,14 +16,19 @@
                 <?php endwhile; ?>
 
                 <article class="footer__menu find-us">
-                    <h5>Find Us</h5>
+                    <h5>Find Us <span class="ion-ios-plus-empty"></span></h5>
 
                     <div class="contact">
-                        <a target="_blank" href="https://www.google.com/maps/place/The+Birdhouse+Therapy+Centre/@50.1532619,-5.0797484,15z/data=!4m6!3m5!1s0x486b3bea64cf14bf:0xca7d05b546b88857!8m2!3d50.1532586!4d-5.0671581!16s%2Fg%2F11s9vm0yyf?entry=ttu">
-                            The Bird House Therapy Centre,<br>
-                             12 Arwenack Street,<br>
-                             Falmouth, TR11 3JD
-                        </a>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://www.google.com/maps/place/The+Birdhouse+Therapy+Centre/@50.1532619,-5.0797484,15z/data=!4m6!3m5!1s0x486b3bea64cf14bf:0xca7d05b546b88857!8m2!3d50.1532586!4d-5.0671581!16s%2Fg%2F11s9vm0yyf?entry=ttu">
+                                    The Bird House Therapy Centre,<br>
+                                    12 Arwenack Street,<br>
+                                    Falmouth, TR11 3JD
+                                </a>
+                            </li>
+                        </ul>
+                        
                     </div>
                 </article>
 

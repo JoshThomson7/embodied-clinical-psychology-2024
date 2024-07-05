@@ -4,7 +4,7 @@
 
 .fc_grid_boxes {
 
-    .grid__boxes__wrapper { display: flex; flex-wrap: wrap; margin: 0 10px;
+    .grid__boxes__wrapper { display: flex; flex-wrap: wrap;
         @include breakpoint(teenbear){margin: 0;}
         
         article { display: flex; align-items: center; flex:1 0 280px; position: relative; overflow: hidden;
