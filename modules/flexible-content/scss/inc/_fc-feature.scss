@@ -20,10 +20,10 @@ Feature
 
             .feature__action{
                .arrow__link{
-                   color: $white; padding: 12px 22px; background: $secondary;
+                   color: $white; padding: 15px 30px; background: $secondary; border-radius: 10px;
                    
                    i{
-                       color: $white;
+                       color: $white; display: none;
                    }
                } 
             }

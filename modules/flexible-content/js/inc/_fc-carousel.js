@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
         item: 1,
         loop: true,
         cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        controls: false,
+        controls: true,
         prevHtml: '<i class="ion-ios-arrow-left"></i>',
         nextHtml: '<i class="ion-ios-arrow-right"></i>',
         pager: true,

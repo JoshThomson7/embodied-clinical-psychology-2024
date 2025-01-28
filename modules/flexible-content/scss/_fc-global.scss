@@ -32,8 +32,8 @@
 
 .section__heading { display: flex; flex-direction: column; padding: 0 0 20px 0;
 
-    h2 { font-size: 30px; text-transform: none; color: $quarternary; margin: 0; display: flex; font-family: $boldFont;
-        @include breakpoint(teenbear){font-size: 24px;}
+    h2 { font-size: 70px; line-height: 80px; text-transform: none; color: $quarternary; margin: 0; display: flex; font-family: $boldFont;
+        @include breakpoint(teenbear){font-size: 24px; line-height: 30px;}
     }
 
     p { margin: 15px 0 0; font-size: 1rem; line-height: 25px;

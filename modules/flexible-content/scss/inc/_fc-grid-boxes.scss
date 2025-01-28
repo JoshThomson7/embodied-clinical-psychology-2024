@@ -7,20 +7,22 @@
     .grid__boxes__wrapper { display: flex; flex-wrap: wrap;
         @include breakpoint(teenbear){margin: 0;}
         
-        article { display: flex; align-items: center; flex:1 0 280px; position: relative; overflow: hidden;
+        article { display: flex; flex-direction: column; align-items: center; flex:1 0 280px; position: relative; overflow: hidden;
 
             .grid__box__image { background-size: cover; background-position: center; background-repeat: no-repeat; width: percentage(1/2); min-height: 125px; position: relative; width: 100%; transition: all .8s ease; transform: scale(1);
                 a { display: block; width: 100%; height: 100%; position: absolute; top:0; left:0;}
             }
 
-            .grid__box__content { width: percentage(1/2); padding: 0 10px; display: flex; flex-direction: column; height: 100%;
-                a.button { margin-top: 20px; background: $text; color: #fff; padding: 8px 20px; align-self: flex-start;
+            .grid__box__content { padding: 0 10px; display: flex; flex-direction: column; height: 100%; margin: 20px 0 0;
+                a.button { background: $primary; color: #fff; padding: 8px 20px; align-self: center; border-radius: 10px;
                     &:hover { background: $primary;}
                 }
 
-                h3 { font-size: 22px; margin-bottom: 10px; line-height: 28px; display: flex; align-items: center;
-                    i { color: $secondary; font-size: 18px; margin-left: 10px; transform: translateX(0) translateY(-2px); transition: all .4s ease;}
+                h3 { font-size: 22px; margin-bottom: 10px; line-height: 28px; display: flex; align-items: center; justify-content: center;
+                    i { display: none; color: $secondary; font-size: 18px; margin-left: 10px; transform: translateX(0) translateY(-2px); transition: all .4s ease;}
                 }
+
+                p{text-align: center;}
             }
 
             // variants

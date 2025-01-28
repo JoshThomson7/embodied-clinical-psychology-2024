@@ -8,18 +8,18 @@
     .cta__wrapper { display: flex; justify-content: space-between; align-items: center; position: relative; padding: 100px 0;
         @include breakpoint(mamabear) { flex-direction: column; align-items: center;}
 
-        .max__width { display: flex; justify-content: space-between; align-items: center;
+        .max__width { display: flex; justify-content: space-between; align-items: center; flex-direction: column;
             @include breakpoint(mamabear) { flex-direction: column; align-items: center;}
         }
 
-        article { width: 40%; position: relative; z-index: 2;
+        article { width: 70%; position: relative; z-index: 2;
             @include breakpoint(mamabear) { text-align: center; margin-bottom: 20px; width: 100%;}
 
-            h2 { font-size: 33px; color: #fff; margin: 0; font-weight: 600;}
-            p { font-size: 18px; padding-top: 20px; margin: 0; color: #fff;}
+            h2 { font-size: 42px; line-height: 60px; color: #fff; margin-bottom: 20px; text-align: center;}
+            p { font-size: 32px; line-height: 50px; padding-bottom: 30px; margin: 0; color: #fff; text-align: center;}
         }
 
-        a { font-size: 22px; font-weight: 700; padding: 15px 50px; position: relative; z-index: 2; background: $secondary; color: $white; transition:all .4s ease; margin-top: 0; align-self: auto;
+        a { border-radius: 10px; font-size: 22px; padding: 15px 50px; position: relative; z-index: 2; background: $primary; color: $white; transition:all .4s ease; margin-top: 0; align-self: auto;
             @include breakpoint(mamabear) { font-size: 18px;}
 
             &:hover { background: lighten($secondary, 5%); transition:all .4s ease;}

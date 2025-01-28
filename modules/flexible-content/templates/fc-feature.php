@@ -54,8 +54,7 @@ if(get_sub_field('feature_video_id')) {
         <?php if(get_sub_field('feature_link_text') && get_sub_field('feature_link_url')): ?>
             <div class="feature__action">
                 <a <?php echo $new_tab; ?> href="<?php the_sub_field('feature_link_url'); ?>" class="arrow__link">
-                    <?php the_sub_field('feature_link_text'); ?>
-                    <i class="fas fa-arrow-right"></i>
+                    <?php the_sub_field('feature_link_text'); ?> 
                 </a>
             </div><!-- feature__action -->
         <?php endif; ?>
