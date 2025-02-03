@@ -50,7 +50,7 @@
                 .testim__content { width: 50%; flex:1 0 auto;
                     @include breakpoint(mamabear) { text-align: center;}
 
-                    p { font-size:16px; line-height:26px; color:$text; padding-bottom:15px; margin:0;}
+                    p { color:$text; padding-bottom:15px; margin:0;}
                     h5 { font-size:18px; color:$text; padding-bottom:0; display: none;}
                 }
             }

@@ -31,8 +31,8 @@
 
                     <div class="header_logo_menu">
                         <div class="logo">
-                            <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>">
+                            <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">Dr Helen Barrett
+                                <!-- <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>"> -->
                             </a>
                         </div><!-- logo -->
                     </div>

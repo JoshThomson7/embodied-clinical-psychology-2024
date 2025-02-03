@@ -46,7 +46,7 @@
 
 ------------------------------------------- */
 
-body { font-family:$primaryFont; font-size:$baseFontSize; font-weight: 500; color:$text; overflow-x: hidden;
+body { font-family: 'Museo 300'; font-size:$baseFontSize; font-weight: 500; color:$text; overflow-x: hidden;
     &.no__scroll { overflow:hidden;}
 }
 
@@ -302,9 +302,10 @@ header.header { width:100%; transition: top .3s ease; position: fixed; z-index: 
             display: flex; margin-right: 60px;
 
             .logo {
-                margin: 20px 0;
+                margin: 20px 0; min-width: 230px;
     
-                a { display:block;
+                a { color: white; font-size: 40px; font-family: $boldFont;
+
                     img { width: 220px; align-self:center; margin: 0 auto;
                         @include breakpoint(brotherbear) { width: 110px;}
                     }
@@ -324,7 +325,7 @@ header.header { width:100%; transition: top .3s ease; position: fixed; z-index: 
     
                     li  { display: flex; align-items: center;
 
-                        a { font-size: 18px; color: white; display: flex; align-items: center; text-align: center; padding: 15px;
+                        a { font-size: 24px; font-weight: 900; color: white; display: flex; align-items: center; text-align: center; padding: 5px;
 
                             &.button{ min-height: 34px; font-weight: bold;
                                 @include breakpoint(papabear) { display: none;}
@@ -366,7 +367,7 @@ header.header { width:100%; transition: top .3s ease; position: fixed; z-index: 
                         }
 
                         &.button{
-                            background: $secondary; color: $white; padding: 8px 15px; margin-left: 10px;
+                            background: $primary; color: $white; padding: 8px 15px; margin-left: 10px;
 
                             a{
                                 color: $white;
@@ -482,7 +483,7 @@ footer { padding: 0; position: relative;
                     a{font-size: 14px;}
                 }
 
-                h5 { font-size: 20px; color: $white; padding-bottom:20px;
+                h5 { font-size: 24px; color: $white; padding-bottom:20px; font-family: $boldFont; letter-spacing: 1px; font-weight: 900;
                     @include breakpoint(papabear) { padding:20px 0; cursor:pointer;}
 
                     span { display:none; float:right; font-size:30px; position:relative; top:-6px;

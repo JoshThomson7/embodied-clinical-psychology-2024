@@ -9,7 +9,7 @@
         
         article { display: flex; flex-direction: column; align-items: center; flex:1 0 280px; position: relative; overflow: hidden;
 
-            .grid__box__image { background-size: cover; background-position: center; background-repeat: no-repeat; width: percentage(1/2); min-height: 125px; position: relative; width: 100%; transition: all .8s ease; transform: scale(1);
+            .grid__box__image { background-size: cover; background-position: center; background-repeat: no-repeat; width: percentage(1/2); min-height: 250px; position: relative; width: 100%; transition: all .8s ease; transform: scale(1);
                 a { display: block; width: 100%; height: 100%; position: absolute; top:0; left:0;}
             }
 
@@ -18,7 +18,7 @@
                     &:hover { background: $primary;}
                 }
 
-                h3 { font-size: 22px; margin-bottom: 10px; line-height: 28px; display: flex; align-items: center; justify-content: center;
+                h3 { text-transform: uppercase; font-size: 28px; margin-bottom: 10px; line-height: 34px; display: flex; align-items: center; justify-content: center;
                     i { display: none; color: $secondary; font-size: 18px; margin-left: 10px; transform: translateX(0) translateY(-2px); transition: all .4s ease;}
                 }
 

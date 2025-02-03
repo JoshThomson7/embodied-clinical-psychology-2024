@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 20px 0; padding: 0; font-family: $primaryFont; color: $quarternary;
+    margin: 0 0 20px 0; padding: 0; font-family: $primaryFont; color: $quarternary; letter-spacing: 1px;
 }
 
 h2 { line-height: 38px; font-size: 32px;}
@@ -8,7 +8,7 @@ h4 { line-height: 30px; font-size: 24px;}
 h5 { line-height: 26px; font-size: 20px;}
 h6 { line-height: 24px; font-size: 18px;}
 
-p { font-size: 17px; color: $text; margin-bottom: 30px; font-weight: 500; line-height: 30px;
+p { font-size: 17px; color: $text; margin-bottom: 30px; font-weight: 600; line-height: 26px; font-family: 'Museo 300';
     a { color: $primary; }
 
     &:last-child{margin-bottom: 0;}
