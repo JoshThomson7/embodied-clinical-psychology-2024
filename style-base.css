@@ -23992,13 +23992,12 @@ section.banners .banner__caption .banner_logo {
   }
 }
 section.banners .banner__caption h2 {
-  letter-spacing: 4px;
-  font-size: 80px;
+  font-size: 60px;
   color: #fff;
   font-weight: 600;
   padding: 0 0 20px;
-  line-height: 84px;
-  font-family: "Meno";
+  line-height: 74px;
+  font-family: "Georgia";
 }
 @media (max-width: 700px) {
   section.banners .banner__caption h2 {
@@ -24008,9 +24007,9 @@ section.banners .banner__caption h2 {
   }
 }
 section.banners .banner__caption p {
-  font-size: 24px;
+  font-size: 22px;
   color: #FFFFFE;
-  line-height: 36px;
+  line-height: 32px;
 }
 @media (max-width: 700px) {
   section.banners .banner__caption p {
@@ -24879,7 +24878,7 @@ Flexible Content
   color: #153354;
   margin: 0;
   display: flex;
-  font-family: "Meno";
+  font-family: "Georgia";
 }
 @media (max-width: 625px) {
   .flexible__content .section__heading h2 {
@@ -24970,7 +24969,7 @@ Flexible Content
 .flexible__content h1, .flexible__content h2, .flexible__content h3, .flexible__content h4, .flexible__content h5, .flexible__content h6 {
   margin: 0 0 20px 0;
   padding: 0;
-  font-family: "Meno", sans-serif;
+  font-family: "Georgia", sans-serif;
   color: #153354;
   letter-spacing: 1px;
 }
@@ -24998,9 +24997,8 @@ Flexible Content
   font-size: 17px;
   color: #4c4b4f;
   margin-bottom: 30px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 26px;
-  font-family: "Museo 300";
 }
 .flexible__content p a {
   color: #599bbc;
@@ -25230,7 +25228,7 @@ Flexible Content
 .flexible__content .fc_feature .fc_feature_wrapper .feature__text h3 {
   font-size: 32px;
   line-height: 38px;
-  font-family: "Meno";
+  font-family: "Georgia";
   display: flex;
   flex-direction: column;
   font-weight: 900;
@@ -26580,7 +26578,6 @@ Flexible Content
   color: #fff;
   margin-bottom: 20px;
   text-align: center;
-  font-family: "Museo 300";
 }
 .flexible__content .fc_cta .cta__wrapper article p {
   font-size: 32px;
@@ -26660,7 +26657,7 @@ Flexible Content
   background-position: center;
   background-repeat: no-repeat;
   width: 50%;
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
   width: 100%;
   transition: all 0.8s ease;
@@ -28627,7 +28624,7 @@ Flexible Content
 .mc-wrapper input[type=button],
 .mc-wrapper button {
   margin-top: 10px;
-  font-family: "Meno", sans-serif;
+  font-family: "Georgia", sans-serif;
   padding: 14px 60px 9px;
   font-size: 20px;
   font-size: 1.25rem;
@@ -29771,7 +29768,7 @@ Flexible Content
 
 ------------------------------------------- */
 body {
-  font-family: "Museo 300";
+  font-family: "Georgia", sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: #4c4b4f;
@@ -29985,7 +29982,7 @@ a.button span, button.button span, button span, input[type=submit] span, input[t
   text-align: center;
   color: #FFFFFE;
   line-height: 16px;
-  font-family: "Meno", sans-serif;
+  font-family: "Georgia", sans-serif;
 }
 a.button.primary, button.button.primary, button.primary, input[type=submit].primary, input[type=button].primary {
   background: #599bbc;
@@ -30119,7 +30116,7 @@ header.header .pre__header .max__width .contact li i {
 }
 header.header .pre__header .max__width .contact li a {
   color: #FFFFFE;
-  font-family: "Meno", sans-serif;
+  font-family: "Georgia", sans-serif;
 }
 header.header .pre__header .max__width .contact li a:hover {
   color: #599bbc;
@@ -30186,7 +30183,7 @@ header.header .header__main .burger__menu a {
   display: flex;
   align-items: center;
   color: #599bbc;
-  font-family: "Meno";
+  font-family: "Georgia";
   font-size: 16px;
 }
 header.header .header__main .oc__nav__trigger a:hover,
@@ -30210,12 +30207,11 @@ header.header .header__main .header_logo_menu {
 }
 header.header .header__main .header_logo_menu .logo {
   margin: 20px 0;
-  min-width: 230px;
+  min-width: 280px;
 }
 header.header .header__main .header_logo_menu .logo a {
   color: white;
-  font-size: 40px;
-  font-family: "Meno";
+  font-size: 36px;
 }
 header.header .header__main .header_logo_menu .logo a img {
   width: 220px;
@@ -30259,7 +30255,6 @@ header.header .header__main .header__cta .header__menu ul li {
 }
 header.header .header__main .header__cta .header__menu ul li a {
   font-size: 24px;
-  font-weight: 900;
   color: white;
   display: flex;
   align-items: center;
@@ -30347,9 +30342,6 @@ header.header .header__main .header__cta .header__menu ul li.button {
 }
 header.header .header__main .header__cta .header__menu ul li.button a {
   color: #FFFFFE;
-}
-header.header .header__main .header__cta .header__menu ul li.button a:hover {
-  color: #599bbc;
 }
 header.header .header__main .header__cta .header__menu ul li:hover > ul {
   display: flex;
@@ -30501,7 +30493,7 @@ footer .footer__menus .max__width article h5 {
   font-size: 24px;
   color: #FFFFFE;
   padding-bottom: 20px;
-  font-family: "Meno";
+  font-family: "Georgia";
   letter-spacing: 1px;
   font-weight: 900;
 }

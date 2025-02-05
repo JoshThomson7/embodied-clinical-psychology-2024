@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title><?php wp_title( '-', true, 'right' ); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="https://kit.fontawesome.com/f6f8cbf1c2.js" crossorigin="anonymous"></script>
 
     <?php wp_head(); ?>
 

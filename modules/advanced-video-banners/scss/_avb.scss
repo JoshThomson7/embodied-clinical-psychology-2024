@@ -49,11 +49,11 @@ section.banners { position: relative; overflow: hidden;
                 @include breakpoint(mamabear) { margin: 0 auto 20px;}
             }
 
-            h2 { letter-spacing: 4px; font-size: 80px; color: #fff; font-weight: 600; padding: 0 0 20px; line-height: 84px; font-family: $boldFont;
+            h2 { font-size: 60px; color: #fff; font-weight: 600; padding: 0 0 20px; line-height: 74px; font-family: $boldFont;
                 @include breakpoint(mamabear) {  font-size: 42px; line-height: 50px; text-align: center;}
             }
 
-            p { font-size: 24px; color: $white; line-height: 36px;
+            p { font-size: 22px; color: $white; line-height: 32px;
                 @include breakpoint(mamabear) { font-size: 26px; line-height: 34px; text-align: center; padding-right: 0;}
             }
 

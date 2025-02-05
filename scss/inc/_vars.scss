@@ -1,6 +1,6 @@
 // Fonts
-$primaryFont: 'Meno', sans-serif;
-$boldFont: 'Meno';
+$primaryFont: 'Georgia', sans-serif;
+$boldFont: 'Georgia';
 $secondaryFont: Verdana, Geneva, sans-serif;
 $baseFontSize: 20px;
 $baseFontColor: #4c4b4f;
@@ -13,5 +13,5 @@ $quarternary: #153354;
 
 $lightgrey: #f1f5f7;
 $white: #FFFFFE; 
-$text: $baseFontColor;
+$text: $baseFontColor; 
 $border: darken($lightgrey, 5%);
