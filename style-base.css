@@ -23151,7 +23151,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .oc__nav__content .oc__nav__trigger {
   display: block;
-  color: #535353;
+  color: white;
   position: absolute;
   right: 20px;
   top: 35px;
@@ -23925,7 +23925,7 @@ section.banners #home_banners .banner {
 section.banners .banner {
   position: relative;
   height: 100px;
-  min-height: 100px;
+  min-height: 70px;
   overflow: hidden;
   overflow: hidden;
   background: #599bbc;
@@ -24274,7 +24274,7 @@ section.banners.inner .banner {
 }
 @media (max-width: 700px) {
   section.banners.inner .banner {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 }
 section.banners.inner .banner .max__width {
@@ -24298,16 +24298,19 @@ section.banners.inner .banner .banner__caption {
   top: auto;
 }
 section.banners.inner .banner .banner__caption h1 {
-  font-size: 38px;
+  font-size: 32px;
   color: #fff;
-  font-weight: 700;
   position: relative;
   z-index: 2;
 }
 @media (max-width: 550px) {
   section.banners.inner .banner .banner__caption h1 {
     font-size: 28px;
-    padding-top: 80px;
+  }
+}
+@media (max-width: 400px) {
+  section.banners.inner .banner .banner__caption h1 {
+    font-size: 24px;
   }
 }
 section.banners.inner .banner .banner__caption p {
@@ -24880,10 +24883,16 @@ Flexible Content
   display: flex;
   font-family: "Georgia";
 }
+@media (max-width: 1024px) {
+  .flexible__content .section__heading h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
 @media (max-width: 625px) {
   .flexible__content .section__heading h2 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 34px;
   }
 }
 .flexible__content .section__heading p {
@@ -25015,7 +25024,10 @@ Flexible Content
   list-style: disc;
   margin-bottom: 10px;
   color: #4c4b4f;
-  font-weight: 500;
+  font-size: 17px;
+  color: #4c4b4f;
+  font-weight: 300;
+  line-height: 26px;
 }
 .flexible__content ul li a, .flexible__content ol li a {
   color: #599bbc;
@@ -25294,9 +25306,9 @@ Flexible Content
   text-align: right;
 }
 .flexible__content .fc_icon_grid .fc_icon_grid_wrapper article {
-  padding: 20px;
+  margin: 20px;
   color: inherit;
-  max-width: 350px;
+  max-width: 300px;
   /* Full */
   /* Half */
   /* One third */
@@ -25379,9 +25391,6 @@ Flexible Content
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-.flexible__content .fc_icon_grid .fc_icon_grid_wrapper article .icon-grid__content {
-  padding: 0 20px;
 }
 .flexible__content .fc_icon_grid .fc_icon_grid_wrapper article h4 {
   font-size: 28px;
@@ -26586,6 +26595,18 @@ Flexible Content
   margin: 0;
   color: #fff;
   text-align: center;
+}
+@media (max-width: 700px) {
+  .flexible__content .fc_cta .cta__wrapper article p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .flexible__content .fc_cta .cta__wrapper article p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 .flexible__content .fc_cta .cta__wrapper a {
   border-radius: 10px;
@@ -30007,7 +30028,7 @@ a.button.tertiary span, button.button.tertiary span, button.tertiary span, input
 }
 a.button.outline, button.button.outline, button.outline, input[type=submit].outline, input[type=button].outline {
   background-color: transparent;
-  border: 1px solid #535353;
+  border: 1px solid white;
   color: #599bbc;
 }
 a.button.outline span, button.button.outline span, button.outline span, input[type=submit].outline span, input[type=button].outline span {
@@ -30069,12 +30090,18 @@ a.button:hover span, button.button:hover span, button:hover span, input[type=sub
             /____/
 
 ------------------------------------------- */
+.home header.header {
+  position: fixed;
+  background: none;
+}
+
 header.header {
   width: 100%;
   transition: top 0.3s ease;
-  position: fixed;
+  position: relative;
   z-index: 999999999;
   top: 0;
+  background: #153354;
 }
 header.header .pre__header {
   padding: 10px 0;
@@ -30172,7 +30199,7 @@ header.header .header__main .oc__nav__trigger,
 header.header .header__main .burger__menu {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   header.header .header__main .oc__nav__trigger,
   header.header .header__main .burger__menu {
     display: block;
@@ -30182,7 +30209,7 @@ header.header .header__main .oc__nav__trigger a,
 header.header .header__main .burger__menu a {
   display: flex;
   align-items: center;
-  color: #599bbc;
+  color: white;
   font-family: "Georgia";
   font-size: 16px;
 }
@@ -30198,20 +30225,35 @@ header.header .header__main .burger__menu a:hover i {
 header.header .header__main .oc__nav__trigger a i,
 header.header .header__main .burger__menu a i {
   font-size: 18px;
-  color: #599bbc;
+  color: white;
   padding-right: 15px;
 }
 header.header .header__main .header_logo_menu {
   display: flex;
   margin-right: 60px;
 }
+@media (max-width: 700px) {
+  header.header .header__main .header_logo_menu {
+    margin: 0;
+  }
+}
 header.header .header__main .header_logo_menu .logo {
   margin: 20px 0;
-  min-width: 280px;
+  min-width: 270px;
+}
+@media (max-width: 700px) {
+  header.header .header__main .header_logo_menu .logo {
+    min-width: 200px;
+  }
 }
 header.header .header__main .header_logo_menu .logo a {
   color: white;
   font-size: 36px;
+}
+@media (max-width: 700px) {
+  header.header .header__main .header_logo_menu .logo a {
+    font-size: 26px;
+  }
 }
 header.header .header__main .header_logo_menu .logo a img {
   width: 220px;
@@ -30231,9 +30273,9 @@ header.header .header__main .header__cta {
 header.header .header__main .header__cta .header__menu {
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   header.header .header__main .header__cta .header__menu {
     display: none;
   }
@@ -30244,7 +30286,7 @@ header.header .header__main .header__cta .header__menu ul {
   width: 100%;
   justify-content: space-between;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   header.header .header__main .header__cta .header__menu ul {
     margin-left: 0;
   }
@@ -30254,7 +30296,7 @@ header.header .header__main .header__cta .header__menu ul li {
   align-items: center;
 }
 header.header .header__main .header__cta .header__menu ul li a {
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   display: flex;
   align-items: center;
@@ -30494,8 +30536,6 @@ footer .footer__menus .max__width article h5 {
   color: #FFFFFE;
   padding-bottom: 20px;
   font-family: "Georgia";
-  letter-spacing: 1px;
-  font-weight: 900;
 }
 @media (max-width: 1024px) {
   footer .footer__menus .max__width article h5 {

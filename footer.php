@@ -54,7 +54,7 @@
 
                     <ul>
                         <li><i class="fa fa-phone"></i><a href="tel:07543794335">07543794335</a></li>
-                        <li><i class="fa fa-envelope"></i><a href="mailto:hello@embodiedclinicalpsychology.com">hello@embodiedclinicalpsychology.com</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:info@drhelenbarrett.co.uk">info@drhelenbarrett.co.uk</a></li>
                     </ul>
                 </article>
 

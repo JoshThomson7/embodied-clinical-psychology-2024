@@ -23,7 +23,7 @@
 
         @include breakpoint(brotherbear) { flex-direction: column; padding: 0;}
 
-        .oc__nav__trigger { display: block; color: $secondary; position: absolute; right: 20px; top: 35px; z-index: 10;
+        .oc__nav__trigger { display: block; color: white; position: absolute; right: 20px; top: 35px; z-index: 10;
             i { font-size: 38px;}
         }
 
