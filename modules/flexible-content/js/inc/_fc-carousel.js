@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
         nextHtml: '<i class="ion-ios-arrow-right"></i>',
         pager: true,
         auto: true,
-        pause: 6000,
+        pause: 12000,
         slideMargin: 0,
         enableDrag: false,
         responsive : [
